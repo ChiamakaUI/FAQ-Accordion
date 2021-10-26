@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+     padding: 0;
+     margin: 0;
+     height: 100vh;
+     font-family: 'Kumbh Sans', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 3% auto;
+    align-items: center;
+    background-color: #fff;
+    height: auto;
+    border-radius: 20px;
+}
+
+.image{
+  position: relative;
+  width: 45%;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-size: auto;
+  background-position-y: 65%;
+  background-position-x: 107.7%;
+  background-repeat: no-repeat;
+  margin-right: 3rem;
+}
+
+.womanImage{
+    overflow: hidden;
+  height: 100%;
+  max-width: 43.325rem;
+}
+
+.woman-desktop{
+    position: relative;
+  -webkit-transform: translateX(-17%);
+  -ms-transform: translateX(-17%);
+  transform: translateX(-17%);
+  top: 17%;
+}
+
+.woman-mobile{
+    display: none;
+}
+
+.box{
+    position: absolute;
+  left: -21.5%;
+  top: 42%;
+}
+
+
+.faq{
+    width: 55%;
+    padding: 35px;
+}
+
+h2{
+    margin-bottom: 3px;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+
+.accordion{
+    width: 100%;
+}
+
+.accordionTitle{
+  background-color: #fff;
+  color:  hsl(237, 12%, 33%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  
+}
+
+.accordionTitle:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.arrow {
+   transition: all 0.5s;
+}
+
+.rotate {
+  transform: rotateZ(180deg);
+}
+
+.accordionContent{
+    display: none;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.accordionContent p{
+    font-size: 12px;
+    text-justify: auto;
+    margin-top: 2px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color:  hsl(240, 6%, 50%);
+    font-weight: 400;
+    
+}
+
+hr{
+    border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+@media (max-width:480px) {
+
+main{
+    display: block;
+    width: 90%;
+    margin: 35% auto;
+    
+}
+
+    .woman-desktop{
+        display: none;
+    }
+
+
+.box{
+    display: none;
+}
+
+.image{
+    width: 80%;
+    margin: 90px auto;
+    background-image: url(./images/bg-pattern-mobile.svg);
+   
+}
+
+.woman-mobile{
+    transform: translateY(-55%); 
+    position: absolute;
+    display: block;
+}
+
+.faq{
+    width: 80%;
+    padding: 35px;
+    margin: 30px auto;
+}
+
+h2{
+    text-align: center;
+}
+
+}
